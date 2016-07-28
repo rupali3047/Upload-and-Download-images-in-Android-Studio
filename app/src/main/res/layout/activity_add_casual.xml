@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rupali.onlineshopping1.AddCasual"
+    android:gravity="center"
+    android:layout_margin="@dimen/margin">
+
+    <TextView
+        android:id="@+id/titleAddCasual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter the details of the product"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/tvNameCasual"
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titleAddCasual"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:text="Name"
+        android:textSize="@dimen/textSize" />
+
+
+    <EditText
+        android:id="@+id/etNameCasual"
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvNameCasual"
+        android:layout_below="@+id/titleAddCasual"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:layout_toRightOf="@id/tvNameCasual" />
+
+    <TextView
+        android:id="@+id/tvPriceCasual"
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNameCasual"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:text="Price"
+        android:textSize="@dimen/textSize" />
+
+    <EditText
+        android:id="@+id/etPriceCasual"
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvPriceCasual"
+        android:layout_below="@id/tvNameCasual"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:layout_toRightOf="@id/tvPriceCasual" />
+
+    <TextView
+        android:id="@+id/tvImageCasual"
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPriceCasual"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:text="Image"
+        android:textSize="@dimen/textSize" />
+
+    <Button
+        android:id="@+id/btnImageCasual"
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvImageCasual"
+        android:layout_below="@id/tvPriceCasual"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:layout_toRightOf="@id/tvImageCasual"
+        android:onClick="btnCasual"
+        android:text="Browse"
+        android:textSize="@dimen/textSize" />
+
+    <ImageView
+        android:id="@+id/ivCasual"
+        android:layout_width="@dimen/widthImage"
+        android:layout_height="@dimen/widthImage"
+        android:layout_below="@+id/tvImageCasual"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:src="@drawable/image1" />
+
+    <Button
+        android:id="@+id/btnSubmitCasual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivCasual"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_admin"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:onClick="btnAddCasual"
+        android:text="Submit"
+        android:textSize="@dimen/textSize" />
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin"
+    tools:context="com.example.rupali.onlineshopping1.AddNewProduct"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleAddNewProd"
+        android:text="Enter the details of the product"
+        android:textSize="@dimen/textSize"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="@dimen/textSize"
+        android:id="@+id/tvNameNP"
+        android:layout_below="@+id/titleAddNewProd"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/margin_admin"/>
+
+
+    <EditText
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNameNP"
+        android:layout_below="@+id/titleAddNewProd"
+        android:layout_toRightOf="@id/tvNameNP"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:layout_alignBaseline="@id/tvNameNP"/>
+
+    <TextView
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="@dimen/textSize"
+        android:id="@+id/tvPriceNP"
+        android:layout_below="@id/tvNameNP"
+        android:layout_marginTop="@dimen/margin_admin"/>
+
+    <EditText
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPriceNP"
+        android:layout_below="@id/tvNameNP"
+        android:layout_toRightOf="@id/tvPriceNP"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:layout_alignBaseline="@id/tvPriceNP"/>
+
+    <TextView
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:text="Image"
+        android:textSize="@dimen/textSize"
+        android:id="@+id/tvImageNP"
+        android:layout_below="@id/tvPriceNP"
+        android:layout_marginTop="@dimen/margin_admin"/>
+
+    <Button
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:text="Browse"
+        android:textSize="@dimen/textSize"
+        android:id="@+id/btnImageNP"
+        android:layout_below="@id/tvPriceNP"
+        android:layout_toRightOf="@id/tvImageNP"
+        android:layout_alignBaseline="@id/tvImageNP"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:onClick="btnNewProd"/>
+
+    <ImageView
+        android:layout_width="@dimen/widthImage"
+        android:layout_height="@dimen/widthImage"
+        android:id="@+id/ivNP"
+        android:layout_below="@+id/tvImageNP"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:src="@drawable/image1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="@dimen/textSize"
+        android:id="@+id/btnSubmitNP"
+        android:layout_below="@id/ivNP"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:layout_marginBottom="@dimen/margin_admin"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnAddNewProd"/>
+
+
+</RelativeLayout>
+</ScrollView>

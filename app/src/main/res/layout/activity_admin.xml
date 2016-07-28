@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rupali.onlineshopping1.Admin"
+    android:layout_margin="@dimen/adminMargin"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose where you want to add image"
+        android:id="@+id/tvChoose"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"/>
+
+    <TextView
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:text="New Product"
+        android:id="@+id/tvNewProd"
+        android:layout_below="@+id/tvChoose"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="@dimen/margin_admin"/>
+
+    <Button
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/btnNewProd"
+        android:layout_below="@+id/tvChoose"
+        android:layout_toRightOf="@id/tvNewProd"
+        android:textSize="@dimen/textSize"
+        android:onClick="addNewProd"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:layout_alignBaseline="@id/tvNewProd"/>
+
+    <TextView
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:text="Party"
+        android:id="@+id/tvParty"
+        android:layout_below="@+id/tvNewProd"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="@dimen/margin_admin"/>
+
+    <Button
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/btnParty"
+        android:layout_below="@+id/tvNewProd"
+        android:layout_toRightOf="@id/tvParty"
+        android:textSize="@dimen/textSize"
+        android:onClick="addParty"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:layout_alignBaseline="@id/tvParty"/>
+
+    <TextView
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:text="Casual"
+        android:id="@+id/tvCasual"
+        android:layout_below="@+id/tvParty"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="@dimen/margin_admin"/>
+
+    <Button
+        android:layout_width="@dimen/widthTv"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/btnCasual"
+        android:layout_below="@+id/tvParty"
+        android:layout_toRightOf="@id/tvCasual"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="@dimen/margin_admin"
+        android:onClick="addCasual"
+        android:layout_alignBaseline="@id/tvCasual"/>
+
+</RelativeLayout>

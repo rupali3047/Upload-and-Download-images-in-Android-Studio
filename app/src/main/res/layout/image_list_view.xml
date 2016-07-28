@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView android:id="@+id/imageDownloaded"
+        android:layout_width="@dimen/widthImage"
+        android:layout_height="@dimen/widthImage"
+        android:src="@drawable/image1"/>
+
+    <TextView android:id="@+id/textViewURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

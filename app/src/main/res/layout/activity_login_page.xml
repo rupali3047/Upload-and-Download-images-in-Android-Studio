@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/loginPage_margin"
+    tools:context="com.example.rupali.onlineshopping1.LoginPage"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:id="@+id/tvUsername"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/textSize"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etUsername"
+        android:inputType="text|textEmailAddress"
+        android:layout_toRightOf="@+id/tvUsername"
+        android:layout_margin="@dimen/margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:id="@+id/tvPassword"
+        android:layout_below="@+id/etUsername"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/textSize"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPassword"
+        android:inputType="textPassword"
+        android:layout_toRightOf="@+id/tvPassword"
+        android:layout_below="@+id/etUsername"
+        android:layout_margin="@dimen/margin"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:onClick="loginSuccess"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/textSize"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_as_admin"
+        android:id="@+id/tvLoginAdmin"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:onClick="loginAdminSuccess"
+        android:layout_margin="@dimen/margin"
+        android:textSize="@dimen/textSize"/>
+
+</RelativeLayout>

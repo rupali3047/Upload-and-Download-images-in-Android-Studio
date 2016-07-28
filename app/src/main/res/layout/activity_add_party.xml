@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.rupali.onlineshopping1.AddParty"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin">
+
+        <TextView
+            android:id="@+id/titleAddParty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Enter the details of the product"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/tvNameParty"
+            android:layout_width="@dimen/widthTv"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/titleAddParty"
+            android:layout_marginTop="@dimen/margin_admin"
+            android:text="Name"
+            android:textSize="@dimen/textSize" />
+
+
+        <EditText
+            android:id="@+id/etNameParty"
+            android:layout_width="@dimen/widthTv"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tvNameParty"
+            android:layout_below="@+id/titleAddParty"
+            android:layout_marginTop="@dimen/margin_admin"
+            android:layout_toRightOf="@id/tvNameParty" />
+
+        <TextView
+            android:id="@+id/tvPriceParty"
+            android:layout_width="@dimen/widthTv"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNameParty"
+            android:layout_marginTop="@dimen/margin_admin"
+            android:text="Price"
+            android:textSize="@dimen/textSize" />
+
+        <EditText
+            android:id="@+id/etPriceParty"
+            android:layout_width="@dimen/widthTv"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tvPriceParty"
+            android:layout_below="@id/tvNameParty"
+            android:layout_marginTop="@dimen/margin_admin"
+            android:layout_toRightOf="@id/tvPriceParty" />
+
+        <TextView
+            android:id="@+id/tvImageParty"
+            android:layout_width="@dimen/widthTv"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPriceParty"
+            android:layout_marginTop="@dimen/margin_admin"
+            android:text="Image"
+            android:textSize="@dimen/textSize" />
+
+        <Button
+            android:id="@+id/btnImageParty"
+            android:layout_width="@dimen/widthTv"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tvImageParty"
+            android:layout_below="@id/tvPriceParty"
+            android:layout_marginTop="@dimen/margin_admin"
+            android:layout_toRightOf="@id/tvImageParty"
+            android:onClick="btnParty"
+            android:text="Browse"
+            android:textSize="@dimen/textSize" />
+
+        <ImageView
+            android:id="@+id/ivParty"
+            android:layout_width="@dimen/widthImage"
+            android:layout_height="@dimen/widthImage"
+            android:layout_below="@+id/tvImageParty"
+            android:layout_marginTop="@dimen/margin_admin"
+            android:src="@drawable/image1" />
+
+        <Button
+            android:id="@+id/btnSubmitParty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivParty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_admin"
+            android:layout_marginTop="@dimen/margin_admin"
+            android:onClick="btnAddParty"
+            android:text="Submit"
+            android:textSize="@dimen/textSize" />
+
+    </RelativeLayout>
+</ScrollView>
